@@ -7,7 +7,7 @@
  * Return: EXITS with specific exit status
  * (0) if stu.argv[0] != "exit"
  */
-int _exit(info_t *stu)
+int _vexit(info_t *stu)
 {
 	int check_exit;
 

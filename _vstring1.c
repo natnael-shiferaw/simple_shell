@@ -11,7 +11,7 @@ char *_vstrcpy(char *DEST, char *SRC)
 {
 	int j = 0;
 
-	if (DEST == SRC || SRC == 0)
+	if (DEST == SRC || 0 == SRC)
 		return (DEST);
 	while (SRC[j])
 	{

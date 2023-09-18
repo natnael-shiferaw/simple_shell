@@ -50,25 +50,25 @@ int _vatoi(char *S)
 	int i, sign = 1, flag = 0, OUTPUT;
 	unsigned int RESULT = 0;
 
-	for (i = 0;  S[i] != '\0' && flag != 2; i++)
-	{
-		if (S[i] == '-')
-		    sign *= -1;
+for (i = 0;  S[i] != '\0' && flag != 2; i++)
+{
+if (S[i] == '-')
+sign *= -1;
 
-		if (S[i] >= '0' && S[i] <= '9')
-		{
-			flag = 1;
-			RESULT *= 10;
-			RESULT += (S[i] - '0');
-		}
-		else if (flag == 1)
-			flag = 2;
-	}
+if (S[i] >= '0' && S[i] <= '9')
+{
+flag = 1;
+RESULT *= 10;
+RESULT += (S[i] - '0');
+}
+else if (flag == 1)
+flag = 2;
+}
 
-	if (sign == -1)
-		OUTPUT = -RESULT;
-	else
-		OUTPUT = RESULT;
+if (sign == -1)
+OUTPUT = -RESULT;
+else
+OUTPUT = RESULT;
 
-	return (OUTPUT);
+return (OUTPUT);
 }

@@ -99,7 +99,6 @@ char *number_conversion(long int n, int b, int flag)
 	static char Buff[50];
 	char SIGN = 0;
 	char *ptr;
-	unsigned long n = n;
 
 	if (!(flag & 2) && n < 0)
 	{

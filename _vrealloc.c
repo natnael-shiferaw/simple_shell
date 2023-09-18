@@ -22,13 +22,13 @@ char *_vmemset(char *p, char byte, unsigned int amount)
  */
 void vfree(char **ss)
 {
-	char **p = ss;
+char **p = ss;
 
-	if (!ss)
-		return;
-	while (*ss)
-	    free(*ss++);
-	free(p);
+if (!ss)
+return;
+while (*ss)
+free(*ss++);
+free(p);
 }
 
 /**
