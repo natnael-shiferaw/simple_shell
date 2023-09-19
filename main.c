@@ -12,7 +12,7 @@ int main(int argc, char **argv)
 {
 
 	int X = 2;
-	info_t INFORMATION[] ={ {NULL, NULL, NULL, 0, 0, 0, 0, NULL,
+	info_t INFORMATION[] = { {NULL, NULL, NULL, 0, 0, 0, 0, NULL,
 	NULL, NULL, NULL, NULL, 0, 0, NULL, 0, 0, 0}};
 
 	asm ("mov %1, %0\n\t"
