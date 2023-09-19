@@ -58,7 +58,7 @@ int capture_builtin(info_t *stu)
 {
 	int j, bir = -1;
 	builtin_t built_intb[] = {
-		{"exit",_vexit},
+		{"exit", _vexit},
 		{"env", _env},
 		{"help", _help},
 		{"history", _hist},
