@@ -84,7 +84,7 @@ typedef struct built_in
 {
 	char *flag;
 	int (*function)(info_t *);
-}builtin_t;
+} builtin_t;
 
 /*line_gets.c */
 void sign_handler(int);

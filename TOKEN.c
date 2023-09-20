@@ -36,7 +36,7 @@ char **vstrtow(char *STR, char *DELIM)
 		S[j] = malloc((X + 1) * sizeof(char));
 		if (!S[j])
 		{
-			for (X = 0; X < j; X++)
+			for (X = 0; j > X; X++)
 				free(S[X]);
 			free(S);
 			return (NULL);
@@ -60,9 +60,9 @@ char **vstrtow(char *STR, char *DELIM)
 char **vstrtow1(char *STR, char DELIM)
 {
 	char **S;
-	int i, j, X, Y, NUMwords = 0;
+	int i, j, X = 0, Y, NUMwords = 0;
 
-	if (STR == NULL || STR[0] == 0)
+	if (NULL == STR || 0 == STR[0])
 		return (NULL);
 
 	for (i = 0; STR[i] != '\0'; i++)
@@ -78,13 +78,13 @@ char **vstrtow1(char *STR, char DELIM)
 	{
 		while (STR[i] == DELIM && STR[i] != DELIM)
 			i++;
-		X = 0;
+
 		while (STR[i + X] != DELIM && STR[i + X] && STR[i + X] != DELIM)
 			X++;
 		S[j] = malloc((X + 1) * sizeof(char));
 		if (!S[j])
 		{
-			for (X = 0; X < j; X++)
+			for (X = 0; j > X; X++)
 				free(S[X]);
 			free(S);
 			return (NULL);

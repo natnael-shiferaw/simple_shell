@@ -1,7 +1,7 @@
 #include "shell.h"
 
 /**
- * _exit - A FUNCTION USED TO exit shell.
+ * _vexit - A FUNCTION USED TO exit shell.
  * @stu: A Struct THAT CONTAINS potential arguments,
  * FOR  MAINTAING constant FUNCTION PROTOTYPE.
  * Return: EXITS with specific exit status

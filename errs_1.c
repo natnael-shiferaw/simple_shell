@@ -11,8 +11,8 @@ int _err_vatoi(char *S)
 	int INDEX = 0;
 	unsigned long int RESULT = 0;
 
-	if (*S == '+')
-	    S++;
+if (*S == '+')
+S++;
 	for (INDEX = 0;  S[INDEX] != '\0'; INDEX++)
 	{
 		if (S[INDEX] >= '0' && S[INDEX] <= '9')
